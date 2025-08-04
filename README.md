@@ -46,8 +46,6 @@ The second phase transforms our enriched vault.txt into a living, queryable syst
 
 The system begins by converting vault.txt entries into high-dimensional vector representations using the mxbai-embed-large model. These embeddings capture semantic relationships that simple keyword matching would miss. When someone asks "show me when grandpa was young," the system understands this relates to childhood photos, even if those exact words don't appear in the descriptions.
 
-**Intelligent Caching Architecture:** Since embedding generation is computationally expensive, the system implements a sophisticated caching mechanism. Once embeddings are created for vault entries, they're stored locally and only regenerated when content changes. This ensures responsive performance for family members using the system.
-
 **Cosine Similarity Search:** When a query comes in, the system converts it into the same vector space and uses cosine similarity to find the most semantically relevant vault entries. This mathematical approach to relevance ensures that queries like "grandpa's childhood" successfully surface photos from the 1950s, even with varied language or phrasing.
 
 ### RAG-Powered Natural Language Responses
