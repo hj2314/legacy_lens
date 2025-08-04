@@ -2,6 +2,10 @@
 
 ![](https://i.imgur.com/Iay4pW3.png)
 
+[Kaggle Gemma 3n contest details](https://www.kaggle.com/competitions/google-gemma-3n-hackathon)
+
+[Video submission](https://youtu.be/VhhZRXfvW0U?si=V0rOfCxOTasE3ter)
+
 This repository demonstrates the core implementation of Legacy Lens, an AI-powered system that transforms scattered family photos and videos into an intelligent, searchable archive. The system consists of two parts: a media processing pipeline (`write_vault.py`) and a Retrieval-Augmented Generation (RAG) query system (`read_vault.py`).
 
 ---
