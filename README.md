@@ -68,24 +68,6 @@ The system serves both the query interface and media files through a local web s
 
 **Real-Time Query Processing:** The asynchronous architecture ensures that even complex semantic searches and AI generation don't block the user interface. Family members experience responsive interactions that feel natural and immediate.
 
----
-
-## Technical Architecture Philosophy
-
-### Privacy as a Core Design Principle
-
-Every technical decision prioritizes family privacy. By running Gemma 3n through Ollama locally, processing media files on the family's own hardware, and serving content through localhost, we ensure that intimate family moments remain truly private. No external APIs, no cloud dependencies—just local AI serving local families.
-
-### Scalability Through Simplicity
-
-The vault.txt format provides an elegant balance between simplicity and power. It's human-readable for manual review and editing, yet structured enough to support sophisticated RAG operations. This design allows families to start with basic functionality and expand to more complex vector databases and search systems as their needs grow.
-
-### Cultural and Temporal Sensitivity
-
-The system recognizes that family archives span generations, cultures, and languages. Rather than imposing a single organizational structure, it preserves the authentic voice of family stories while making them searchable and accessible to future generations.
-
----
-
 ## From Implementation to Legacy
 
 This technical implementation represents more than just code—it's a bridge between human memory and digital preservation. By combining local AI capabilities with thoughtful human-computer interaction design, we create tools that don't just organize files, but preserve the stories that make them meaningful.
