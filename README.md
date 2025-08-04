@@ -1,10 +1,14 @@
 ### Legacy Lens - Media Processing & RAG Implementation
 
+![](https://i.imgur.com/Iay4pW3.png)
+
 This repository demonstrates the core implementation of Legacy Lens, an AI-powered system that transforms scattered family photos and videos into an intelligent, searchable archive. The system consists of two parts: a media processing pipeline (`write_vault.py`) and a Retrieval-Augmented Generation (RAG) query system (`read_vault.py`).
 
 ---
 
 #### Part 1: Media Processing Pipeline (`write_vault.py`)
+
+*Input -> Processing -> Family Home Server*
 
 This pipeline addresses the challenge that the most valuable context for family media often exists only in human memory. It combines irreplaceable human stories with AI visual analysis to create a rich, structured archive.
 
@@ -13,6 +17,8 @@ The system takes family photos, videos, and crucial human context (e.g., "Grandp
 ---
 
 #### Part 2: RAG Query System (`read_vault.py`)
+
+*Family Home Server <-> Query*
 
 This system transforms the static archive into an interactive, conversational experience. The entries in `vault.txt` are converted into vector embeddings (`mxbai-embed-large`) to enable semantic search that goes beyond simple keywords.
 
