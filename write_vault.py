@@ -10,6 +10,19 @@ The final output is 'vault.txt', where each line represents a media item (or a
 group of related items) and contains the combined descriptions along with a 
 reference to the source file(s).
 
+Example output:
+- When grandpa was young he played catchball and caught fish with his friends.,
+this is a photo from 1950 where grandpa is 8 years old in osaka japan he is
+on the far right with his friends., In this black and white photo, a group of
+young boys in school uniforms – including an older boy in a dark blazer –
+stand together against a tiled wall, with a smaller child visible in the foreground.
+[[grandpa.jpg,grandpa.mp4]]
+
+- This is the first time naoto walked on sep 4 2024, 
+A smiling baby in a light blue, spotted jumpsuit is wobbling slightly while
+standing on a white rug in front of a beige sofa.
+[[babyWalk.mp4]]
+
 Key functionalities:
 - Encodes images and video frames into base64 strings for model input.
 - Uses the Ollama library to get AI-generated descriptions for visuals.
@@ -221,4 +234,3 @@ print("-" * 60)
 for i, entry in enumerate(vault_content, 1):
     print(f"Row {i}:")
     print(f"  {entry}")
-    print()
