@@ -30,8 +30,10 @@ When a user asks a natural language question in English or Japanese (e.g., "show
 
 ---
 
-### Public Demo
+### Implementation Notes & Scope
 
-A demonstration of this implementation will be available at **[TBD]**.
+This implementation is a proof-of-concept designed to clearly demonstrate the core vision of Legacy Lens for the Gemma 3n Impact Challenge. The technical choices were made to highlight the "Privacy-First" and "Offline Ready" capabilities of running Gemma 3n locally with Ollama.
+- Focused Example: To ensure a clear and reliable demonstration, the write_vault.py script uses a small, hardcoded set of media files. This allows for a perfect showcase of the "human + AI" context generation. The next step would be to build a file scanner that can automatically process an entire user-specified directory.
+- Simplified Video Analysis: For efficiency, the system analyzes the first frame of video files. This is a strategic simplification to demonstrate multimodal capabilities without the overhead of full video processing, which could be implemented in a future version.
+- No Public Demo: As a deliberate design choice reinforcing the project's privacy-first mission, there is no public-facing demo. The entire system is designed to run on a user's private network, ensuring family media is never exposed to the internet. The video demo shows the system in its intended, local environment.
 
-Please note that the public demo is hosted on a local server in Japan, and response times may take upwards of 5 to 10 seconds. For privacy purposes, the searchable content is limited to the specific media shown in the demo.
